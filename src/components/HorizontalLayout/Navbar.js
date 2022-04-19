@@ -245,7 +245,7 @@ const Navbar = props => {
                     <i className="ti-menu-alt"></i>More
                   </Link>
                   <div className={classname("dropdown-menu dropdown-menu-left", { show: moreItem })}>
-                    <Link to="/calendar" className="dropdown-item">{props.t("Calendar")}</Link>
+                    {/* <Link to="/calendar" className="dropdown-item">{props.t("Calendar")}</Link> */}
                     <div className="dropdown">
                       <Link
                         to="/#"

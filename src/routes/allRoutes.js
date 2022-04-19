@@ -95,7 +95,7 @@ const userRoutes = [
   { path: "/dashboard", component: Dashboard },
 
   // //calendar
-  { path: "/calendar", component: Calendar },
+  // { path: "/calendar", component: Calendar },
 
   // // //profile
   { path: "/profile", component: UserProfile },

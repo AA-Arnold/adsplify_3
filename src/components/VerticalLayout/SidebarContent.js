@@ -101,12 +101,12 @@ const SidebarContent = props => {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="/calendar" className=" waves-effect">
                 <i className="mdi mdi-calendar-check"></i>
                 <span>{props.t("Calendar")}</span>
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link to="/#" className="has-arrow waves-effect">
