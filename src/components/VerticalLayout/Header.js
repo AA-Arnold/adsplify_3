@@ -152,7 +152,7 @@ const Header = props => {
               >
                 <i className="mdi mdi-magnify" />
               </button>
-              <div
+              {/* <div
                 className={
                   search
                     ? "dropdown-menu dropdown-menu-lg dropdown-menu-right p-0 show"
@@ -177,9 +177,9 @@ const Header = props => {
                     </div>
                   </div>
                 </form>
-              </div>
+              </div> */}
             </div>
-            <LanguageDropdown />
+            {/* <LanguageDropdown /> */}
             <div className="dropdown d-none d-lg-inline-block">
               <button
                 type="button"

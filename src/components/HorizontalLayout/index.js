@@ -79,16 +79,16 @@ class Layout extends Component {
         </div>
 
         <div id="layout-wrapper">
-          <header id="page-topbar">
+          <header className="bg-white">
             <Header isMenuOpened={this.state.isMenuOpened} openLeftMenuCallBack={this.openMenu.bind(this)} />
-            <div className="top-navigation">
-              <div className="page-title-content">
+            {/* <div className="top-navigation"> */}
+              {/* <div className="page-title-content">
                 <Container fluid>
                   <Breadcrumb />
                 </Container>
-              </div>
+              </div> */}
               <Navbar menuOpen={this.state.isMenuOpened} />
-            </div>
+            {/* </div> */}
           </header>
           <div className="main-content">
             <div className="page-content">

@@ -83,7 +83,7 @@ const Navbar = props => {
                   </Link>
                 </li>
 
-                <li className="nav-item dropdown">
+                {/* <li className="nav-item dropdown">
                   <Link
                     to="/#"
                     className="nav-link dropdown-toggle arrow-none"
@@ -107,7 +107,7 @@ const Navbar = props => {
                       {props.t("Email Compose")}
                     </Link>
                   </div>
-                </li>
+                </li> */}
 
                 <li className="nav-item dropdown">
                   <Link
@@ -376,7 +376,7 @@ const Navbar = props => {
                   </div>
                 </li>
 
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown float-right">
                   <Link className="nav-link dropdown-toggle arrow-none" to="#" id="topnav-pages"
                     onClick={e => {
                       e.preventDefault()
@@ -408,7 +408,9 @@ const Navbar = props => {
                       </Col>
                     </Row>
                   </div>
-                </li></ul>
+                </li>
+                
+                </ul>
             </Collapse>
           </nav>
         </div>
