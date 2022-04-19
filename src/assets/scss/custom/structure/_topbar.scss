@@ -290,7 +290,8 @@ body[data-layout="horizontal"] {
     display: inline-block;
   }
   .page-content {
-    margin-top: $header-height;
+    // margin-top: $header-height;
+    margin-top: 10px;
     padding: calc(20px + #{$grid-gutter-width}) calc(#{$grid-gutter-width} / 2)
       $footer-height calc(#{$grid-gutter-width} / 2);
   }
@@ -299,7 +300,7 @@ body[data-layout="horizontal"] {
 @media (max-width: 992px) {
   body[data-layout="horizontal"] {
     .page-content {
-      padding: calc(98px + #{$grid-gutter-width})
+      padding: calc(8px + #{$grid-gutter-width})
         calc(#{$grid-gutter-width} / 2) $footer-height
         calc(#{$grid-gutter-width} / 2);
     }

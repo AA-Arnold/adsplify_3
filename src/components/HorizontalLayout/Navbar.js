@@ -20,6 +20,8 @@ const Navbar = props => {
   const [extra, setextra] = useState(false)
   const [moreItem, setMoreItem] = useState(false);
 
+  const [showMenu, setShowMenu] = useState(false)
+
   useEffect(() => {
     var matchingMenuItem = null
     var ul = document.getElementById("navigation")
@@ -77,12 +79,38 @@ const Navbar = props => {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dashboard">
-                    <i className="ti-dashboard">
+                  <Link className="nav-link d-flex" to="/dashboard">
+                    <i className="dripicons-home mb-0 me-2">
                     </i>{props.t("Dashboard")}
                   </Link>
                 </li>
 
+                <li className="nav-item">
+                  <Link className="nav-link d-flex" to="/dashboard">
+                    <i className="dripicons-volume-full mb-0 me-2">
+                    </i>{props.t("Campaign")}
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link className="nav-link d-flex" to="/dashboard">
+                    <i className="dripicons-card mb-0 me-2">
+                    </i>{props.t("Payment")}
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link className="nav-link d-flex" to="/dashboard">
+                    <i className="dripicons-message mb-0 me-2">
+                    </i>{props.t("Messages")}
+                  </Link>
+                </li>
+
+                {
+                  showMenu && (
+                    <>
+                    
+                 
                 {/* <li className="nav-item dropdown">
                   <Link
                     to="/#"
@@ -409,8 +437,18 @@ const Navbar = props => {
                     </Row>
                   </div>
                 </li>
-                
+                </>
+                  )
+                }
+
                 </ul>
+
+                <Link to="/create_campaign" className="float-end">
+                <button className="btn btn-primary ">
+                  <i className=" ri-add-fill font-size-15 mr-2" />
+                  Add New Post
+                </button>
+              </Link>
             </Collapse>
           </nav>
         </div>
