@@ -101,9 +101,9 @@ const userRoutes = [
   { path: "/profile", component: UserProfile },
 
   // //Email
-  { path: "/email-inbox", component: EmailInbox },
-  { path: "/email-read", component: EmailRead },
-  { path: "/email-compose", component: EmailCompose },
+  // { path: "/email-inbox", component: EmailInbox },
+  // { path: "/email-read", component: EmailRead },
+  // { path: "/email-compose", component: EmailCompose },
 
   // //Charts
   { path: "/apex-charts", component: ChartsAppex },
